@@ -1,0 +1,175 @@
+/* Menu Hamburguesa*/
+.menu {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburguer {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    position: relative;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+#check:checked ~ .menu {
+    display: block;
+}
+
+/* Estilo check box*/
+.en{
+    color:#c8f17b ;
+}
+.es{
+    color: #729d6d;
+}
+.check{
+    position: relative;
+    width: 50px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #c8f17b;
+}
+.check:checked:before{
+    background: #c8f17b;
+}
+/* Estilos globales */
+
+header > div{
+    margin:5px;
+    padding: 5px;
+    float:right;
+}
+.logo{
+    margin:5px;
+    padding: 5px;
+    float:left;
+    height: 65px;
+    width: 150px;
+    position: relative;
+
+}
+*{
+    font-family: blinker;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #729d6d;
+    color:darkslategrey;
+    position: relative;
+}
+header {
+    background-color: #041122;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    height: 70px;
+    margin:0px;
+    font-weight: uppercase;
+    font-style: bold;
+    
+}
+body > header > img{
+    height: 70px;
+    width: 150px;
+    margin:0px;
+    clear:none;
+    float:left;
+    padding: 0px;
+}
+body > header > p{
+    color:#729d6d
+
+}
+nav {
+    background-color: #041122;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #729d6d;
+    margin: 0 10px;
+}
+section {
+    padding: 20px;
+    margin-top: 2%;
+}
+footer {
+    background-color: #041122;
+    color: #c8f17b;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para elementos */
+h1 {
+    margin: 0;
+}
+h2 {
+    color: #041122;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    color: darkslategrey;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Estilos para el carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
