@@ -146,11 +146,13 @@ footer {
 }
 .contact a {
   text-decoration: none;
-  color: #fff; /* o el color que estés usando para el texto */
+  color: #fff; /* o el color que uses para el texto */
   font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .contact a:hover {
-  color: #ccc; /* cambia suavemente al pasar el mouse */
-  text-decoration: underline; /* opcional */
+  color: #ccc; /* efecto al pasar el mouse */
+  text-decoration: underline; /* opcional: si querés que se subraye solo en hover */
 }
+
