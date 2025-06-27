@@ -144,13 +144,13 @@ footer {
     font-size: 1.2rem;
   }
 }
-.contacto a {
+.contact a {
   text-decoration: none;
   color: #fff; /* o el color que estés usando para el texto */
   font-weight: bold;
 }
 
-.contacto a:hover {
+.contact a:hover {
   color: #ccc; /* cambia suavemente al pasar el mouse */
   text-decoration: underline; /* opcional */
 }
