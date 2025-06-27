@@ -144,3 +144,13 @@ footer {
     font-size: 1.2rem;
   }
 }
+.redes a {
+  text-decoration: none;
+  color: #fff; /* o el color que estés usando para el texto */
+  font-weight: bold;
+}
+
+.redes a:hover {
+  color: #ccc; /* cambia suavemente al pasar el mouse */
+  text-decoration: underline; /* opcional */
+}
