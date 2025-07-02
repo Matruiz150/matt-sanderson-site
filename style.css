@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  border-bottom: 1px solid #333;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+header .logo img {
+  height: 40px; /* Probá con 30 o 35 si aún lo ves grande */
+  width: auto;
+  filter: brightness(1) invert(0); /* Aclara logo oscuro en fondo oscuro */
+}
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about p,
+.contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.music .videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.music iframe {
+  width: 100%;
+  height: 200px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  font-size: 0.9rem;
+  color: #777;
+}
+.gallery {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: #f5f5f5;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+/* Estilos responsive para el header */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header .logo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header .logo img {
+    height: 48px; /* Un poco más grande para móviles */
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
+.contact a {
+  text-decoration: none;
+  color: #fff; /* o el color que uses para el texto */
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ccc; /* efecto al pasar el mouse */
+  text-decoration: underline; /* opcional: si querés que se subraye solo en hover */
+}
+
